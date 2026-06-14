@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrimeAcis</title>
+    <title>Contact - PrimeAcis</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -55,20 +55,50 @@
         main {
             flex: 1;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding: 2rem;
         }
 
-        .company-name {
+        .page-title {
             font-family: 'Playfair Display', serif;
-            font-size: 6rem;
+            font-size: 3.5rem;
             font-weight: 700;
+            margin-bottom: 3rem;
             background: linear-gradient(135deg, #fff 0%, #a0a0c0 50%, #fff 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            letter-spacing: 0.02em;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 3rem 4rem;
             text-align: center;
+        }
+
+        .contact-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .contact-email {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-email:hover {
+            color: #a0a0c0;
         }
 
         footer {
@@ -84,8 +114,16 @@
                 padding: 1rem 1.5rem;
             }
 
-            .company-name {
-                font-size: 3rem;
+            .page-title {
+                font-size: 2.5rem;
+            }
+
+            .contact-card {
+                padding: 2rem;
+            }
+
+            .contact-email {
+                font-size: 1.1rem;
             }
 
             nav a {
@@ -104,7 +142,11 @@
     </header>
 
     <main>
-        <h1 class="company-name">PrimeAcis</h1>
+        <h1 class="page-title">Contact Us</h1>
+        <div class="contact-card">
+            <p class="contact-label">Email</p>
+            <a href="mailto:info@prime-acis.com" class="contact-email">info@prime-acis.com</a>
+        </div>
     </main>
 
     <footer>
